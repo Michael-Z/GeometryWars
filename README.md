@@ -1,2 +1,1 @@
-GeometryWars
-============
+After playing Geometry Wars 2 for the first time on XBox Live Arcade, I was immediately inspired to re-create some of the cool graphics.  All done in Cinder, C++, OpenGL.
