@@ -1,0 +1,59 @@
+#pragma once
+
+#include "cinder/app/AppBasic.h"
+#include "cinder/gl/gl.h"
+#include "cinder/gl/GlslProg.h"
+#include "cinder/gl/Fbo.h"
+#include "cinder/Timeline.h"
+
+#include "DataObejcts.h"
+
+#include <vector>
+
+namespace ly {
+	
+static const float kMaxColorAreaLifetime = 1.0f;
+
+class GeometryWarsApp : public ci::app::AppBasic {
+public:
+	void setup();
+	void mouseDown( ci::app::MouseEvent event );
+	void mouseMove( ci::app::MouseEvent event );
+	void prepareSettings(cinder::app::AppBasic::Settings *settings);
+	void update();
+	void draw();
+	
+private:
+	void applyBlur( ci::gl::Texture* texture, ci::gl::Fbo* intoFbo, float spread, float size, ci::Vec2f axis );
+	void showExplosion( ci::Vec2f position );
+	float mPreviousTime;
+	
+	// Frame bufger objects
+	ci::gl::Fbo* mGridFbo;
+	ci::gl::Fbo* mColorMaskFbo;
+	ci::gl::Fbo* mColorMaskFbo1;
+	ci::gl::Fbo* mColorMaskFbo2;
+	ci::gl::Fbo* mDistortionMaskFbo;
+	ci::gl::Fbo* mDistortionMaskFbo2;
+	
+	// Shaders
+	ci::gl::GlslProg* mGridShader;
+	ci::gl::GlslProg* mBlurShader;
+	
+	// Grid
+	ci::Vec2f mGridUnitSize;
+	ci::Vec2i mGridSize;
+	
+	// Contains glowing areas that reveal grid beneath
+	std::vector<ColorMaskArea*> mColorMaskAreas;
+	
+	// Entities that generate color mask areas
+	std::vector<Character*> mCharacters;
+	
+	// Character that follows the mouse in this demo
+	Character* mPlayer;
+	ci::Vec3f mMouseTarget;
+
+};
+
+}

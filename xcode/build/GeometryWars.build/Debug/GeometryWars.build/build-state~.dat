@@ -1,0 +1,235 @@
+TGeometryWars
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Info.plist Info.plist
+cCpResource ../resources/colorgrid.frag ./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag
+cCpResource CinderApp.icns ./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns
+cCpResource ../resources/passthru.vert ./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert
+cProcessPCH++ /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth GeometryWars_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars normal i386
+cTouch /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000503F1B7700000000000000AA
+t1346313079
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005096034800000000000024F0
+t1352008520
+s9456
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000509603480000000000024D90
+t1352008520
+s150928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005096034800000000000060B4
+t1352008520
+s24756
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005096034800000000000001E5
+t1352008520
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c0000000050960348000000000000E920
+t1352008520
+s59680
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000005012D5C900000000000069F0
+t1343411657
+s27120
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000005012D5C90000000000006730
+t1343411657
+s26416
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000005065B6A20000000000081CB0
+t1348843170
+s531632
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000005065B6A6000000000002DAF0
+t1348843174
+s187120
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c0000000050592BA800000000004A2D90
+t1348021160
+s4861328
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000005065B6A60000000000322E20
+t1348843174
+s3288608
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../resources/colorgrid.frag
+c0000000050C4E369000000000000007E
+t1355080553
+s126
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../resources/passthru.vert
+c0000000050C4E3000000000000000053
+t1355080448
+s83
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp
+c0000000050C4E2D2000000000000069A
+t1355080402
+s1690
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Info.plist
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWars.LinkFileList
+c0000000050C4E3990000000000000093
+t1355080601
+s147
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o
+t2
+s0
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/CinderApp.icns
+c0000000050C4DE64000000000001BEB5
+t1355079268
+s114357
+
+N/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/GeometryWars_Prefix.pch
+c0000000050C4DE640000000000000093
+t1355079268
+s147
+i<Cocoa/Cocoa.h>
+
+N/var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c0000000050C4DE640000000000000352
+t1355079268
+s850
+
+CBuild AST from /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencieseaecfc181b75b641^6f0f02191b75b641^-247"warning: no rule to process file '$(PROJECT_DIR)/../resources/colorgrid.frag' of type sourcecode.glsl for architecture i386warning: no rule to process file '$(PROJECT_DIR)/../resources/passthru.vert' of type sourcecode.glsl for architecture i3862(21%IDEActivityLogMessage2@123"Warning: no rule to process file '$(PROJECT_DIR)/../resources/colorgrid.frag' of type sourcecode.glsl for architecture i386-376773401#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@122"Warning: no rule to process file '$(PROJECT_DIR)/../resources/passthru.vert' of type sourcecode.glsl for architecture i386-376773401#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"078AA57A-FA87-4185-91BE-66060E6E6229-
+
+CCompileC ./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s376773401.055607
+e376773402.971092
+r1
+xCompileC
+x./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o
+x/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp9e5d0e191b75b641^e59cf81a1b75b641^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp0000000000000000^2964"CompileC ./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o ../src/GeometryWarsApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-generated-files.hmap -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-own-target-headers.hmap -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-all-target-headers.hmap -iquote /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-project-headers.hmap -iquote../../../cinder/include -iquote../include -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug/include -I../../../cinder/boost -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/DerivedSources/i386 -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/DerivedSources -F/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug -include /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch -MMD -MT dependencies -MF /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.d --serialize-diagnostics /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.dia -c /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../src/GeometryWarsApp.cpp -o /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWarsApp.o36"7CEA0237-743C-41D1-850A-5D1D0C91C2D5-
+
+CCpResource ../resources/colorgrid.frag ./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag
+s376773401.022433
+e376773401.025520
+r1
+xCpResource
+x../resources/colorgrid.frag
+x./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy ./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag1ccd05191b75b641^df8806191b75b641^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag000000000080d041^472"CpResource ../resources/colorgrid.frag ./build/Debug/GeometryWars.app/Contents/Resources/colorgrid.frag    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../resources/colorgrid.frag /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources36"4EFF9EAE-1BDB-4A70-85BC-FB49E726376C-
+
+CCpResource ../resources/passthru.vert ./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert
+s376773401.022453
+e376773401.026639
+r1
+xCpResource
+x../resources/passthru.vert
+x./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy ./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert74d005191b75b641^89d206191b75b641^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert000000000080d041^469"CpResource ../resources/passthru.vert ./build/Debug/GeometryWars.app/Contents/Resources/passthru.vert    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/../resources/passthru.vert /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources36"5373280C-96C0-48C5-A7E7-AC654758BCFE-
+
+CCpResource CinderApp.icns ./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns
+s376773401.022436
+e376773401.024693
+r1
+xCpResource
+xCinderApp.icns
+x./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy ./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns36cb05191b75b641^005306191b75b641^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns000000000080d041^446"CpResource CinderApp.icns ./build/Debug/GeometryWars.app/Contents/Resources/CinderApp.icns    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/CinderApp.icns /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Resources36"35F17529-8235-42C9-B7BC-D7ECCE43A0EB-
+
+CLd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars normal i386
+s376773402.977901
+e376773403.351462
+r1
+xLd
+x/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Link /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWarsc66bfa1a1b75b641^22fa591b1b75b641^---0#0#0#--1091"Ld ./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars normal i386    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug -F/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug -filelist /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/Objects-normal/i386/GeometryWars.LinkFileList -mmacosx-version-min=10.5 ../../../cinder/lib/libcinder_d.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/MacOS/GeometryWars36"916D6DB0-0291-4D79-8FC5-60109A401BBB-
+
+CProcessInfoPlistFile /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Info.plist Info.plist
+s376773401.012154
+e376773401.014854
+r1
+xProcessInfoPlistFile
+x/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist6b2a03191b75b641^56f403191b75b641^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/Info.plist0000000000000000^453"ProcessInfoPlistFile ./build/Debug/GeometryWars.app/Contents/Info.plist Info.plist    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app/Contents/Info.plist36"9D8A9BA7-83FA-467B-A594-33697E365BD8-
+
+CProcessPCH++ /Users/pdlynch/Library/Developer/Xcode/DerivedData/GeometryWars-dceocqwojktwryakkkieqcgduchj/Index/PrecompiledHeaders/GeometryWars_Prefix-bndrhptljivhfadosbcayubontxe_ast/GeometryWars_Prefix.pch.pth GeometryWars_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth GeometryWars_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s376773401.034642
+e376773401.048806
+r1
+xProcessPCH++
+x/var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth
+xGeometryWars_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Precompile GeometryWars_Prefix.pch90f908191b75b641^4a7e0c191b75b641^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/GeometryWars_Prefix.pch0000000000000000^2942"ProcessPCH++ /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth GeometryWars_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-generated-files.hmap -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-own-target-headers.hmap -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-all-target-headers.hmap -iquote /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/GeometryWars-project-headers.hmap -iquote../../../cinder/include -iquote../include -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug/include -I../../../cinder/boost -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/DerivedSources/i386 -I/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/GeometryWars.build/Debug/GeometryWars.build/DerivedSources -F/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/build/Debug --serialize-diagnostics /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.dia -c /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/GeometryWars_Prefix.pch -o /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hz/0xx9203d5t93926w7dp8lytm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GeometryWars_Prefix-bqydvoaozaoqgmeiogcljhwzfoon/GeometryWars_Prefix.pch.d36"FF742E07-0E89-4E3E-8C9D-3A2EACFA2A08-
+
+CTouch /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app
+s376773403.359422
+e376773403.365282
+r1
+xTouch
+x/Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Touch /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app62145c1b1b75b641^c7835d1b1b75b641^---0#0#0#--211"Touch ./build/Debug/GeometryWars.app    cd /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode    /usr/bin/touch -c /Users/pdlynch/Development/LYGraphics/GeometryWars/xcode/./build/Debug/GeometryWars.app36"273E57E5-0CAC-415C-A2A6-1E5C8631FFD7-
+
