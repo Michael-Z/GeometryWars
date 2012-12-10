@@ -13,13 +13,14 @@ public:
 	{
 		objectId = objectIdCounter++;
 		lifetime = 0.0f;
-		size = lifetime * growthRate;
+		baseSize = 10.0f;
+		update( 0.0f );
 	}
 	
 	void update( const float deltaTime )
 	{
 		lifetime += deltaTime;
-		size = lifetime * growthRate;
+		size = baseSize + lifetime * growthRate;
 		color.a = 1.0f - lifetime / maxLifetime;
 	}
 	
@@ -33,6 +34,7 @@ public:
 	float lifetime;
 	float growthRate;
 	float size;
+	float baseSize;
 	float maxLifetime;
 };
 	

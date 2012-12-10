@@ -22,13 +22,16 @@ void GeometryWarsApp::setup()
 	
 	gl::Fbo::Format format;
 	format.enableMipmapping();
-	format.setMagFilter( GL_LINEAR_MIPMAP_LINEAR );
+	format.setMagFilter( GL_NEAREST_MIPMAP_LINEAR );
 	mGridFbo				= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mColorMaskFbo			= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mColorMaskFbo1			= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mColorMaskFbo2			= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mDistortionMaskFbo		= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mDistortionMaskFbo2		= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
+	mCharacterGlowFbo		= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
+	mCharacterGlowFbo1		= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
+	mCharacterGlowFbo2		= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	
 	mGridSize				= Vec2i( 40, 30 );
 	mGridUnitSize			= Vec2f( getWindowSize().x / (float) mGridSize.x, getWindowSize().y / (float) mGridSize.y );
@@ -128,7 +131,7 @@ void GeometryWarsApp::applyBlur( ci::gl::Texture* texture, ci::gl::Fbo* intoFbo,
 {
 	intoFbo->bindFramebuffer();
 	mBlurShader->bind();
-	gl::clear( Color( 0, 0, 0 ) );
+	gl::clear( ColorA( 0, 0, 0, 0 ) );
 	texture->bind( 0 );
 	mBlurShader->uniform( "texture", 0 );
 	mBlurShader->uniform( "spread", spread );
@@ -183,13 +186,16 @@ void GeometryWarsApp::draw()
 	}
 	mColorMaskFbo->unbindFramebuffer();
 	
-	// Apply a blur using a pair of these method calls
-	applyBlur( &mColorMaskFbo->getTexture(),		mColorMaskFbo1,			0.06f,	0.003f,		Vec2f( 0.0f, 1.0f ) );
-	applyBlur( &mColorMaskFbo1->getTexture(),		mColorMaskFbo2,			0.06f,	0.003f,		Vec2f( 1.0f, 0.0f ) );
-	
 	// The disortion mask is a single-color (Red) map similar to the color mask,
 	// except that it will be blured and used for the pixel shader that does the disortion effect
 	gl::setMatricesWindow( getWindowSize(), false );
+	
+	// Apply a blur using a pair of these method calls
+	applyBlur( &mColorMaskFbo->getTexture(),		mColorMaskFbo1,			0.073f,	0.008f,		Vec2f( 0.0f, 1.0f ) );
+	applyBlur( &mColorMaskFbo1->getTexture(),		mColorMaskFbo2,			0.073f,	0.008f,		Vec2f( 1.0f, 0.0f ) );
+	
+	// To see the color mask and its blur
+	//gl::draw( mColorMaskFbo2->getTexture() ); drawCharacters(); return;
 	
 	// Apply a blur using a pair of these method calls
 	applyBlur( &mColorMaskFbo->getTexture(),		mDistortionMaskFbo,		0.06f,	0.008f,		Vec2f( 0.0f, 1.0f ) );
@@ -215,20 +221,22 @@ void GeometryWarsApp::draw()
 	mDistortionMaskFbo->unbindTexture();
 	mGridShader->unbind();
 	
-	// Reset the matrices to draw characters as 3d shadpes
-	gl::setMatricesWindowPersp( app::getWindowSize(), 20.0f, -100.0f, 300.0f, false );
-	
 	// Draw the characters
-	std::vector<Character*>::iterator c_iter;
-	for( c_iter = mCharacters.begin(); c_iter != mCharacters.end(); c_iter++ ) {
-		gl::color( (*c_iter)->color );
-		glPushMatrix();
-		gl::translate( (*c_iter)->position );
-		gl::rotate( (*c_iter)->rotation );
-		gl::scale( (*c_iter)->scale );
-		gl::drawStrokedCube( Vec3f::zero(), Vec3f( 10, 10, 10 ) );
-		glPopMatrix();
-	}
+	mCharacterGlowFbo->bindFramebuffer();
+	gl::color( 1, 1, 1, 1 );
+	gl::clear( ColorA( 0, 0, 0, 0 ) );
+	drawCharacters();
+	mCharacterGlowFbo->unbindFramebuffer();
+	
+	// Apply a blur using a pair of these method calls
+	//applyBlur( &mCharacterGlowFbo->getTexture(),	mCharacterGlowFbo1,		0.06f,	0.008f,		Vec2f( 0.0f, 1.0f ) );
+	//applyBlur( &mCharacterGlowFbo1->getTexture(),	mCharacterGlowFbo2,		0.06f,	0.008f,		Vec2f( 1.0f, 0.0f ) );
+	
+	//gl::setMatricesWindow( getWindowSize(), false );
+	//gl::draw( mCharacterGlowFbo->getTexture() );
+	//drawCharacters( ColorA( .3, .3, .3, 0 ) );
+	
+	drawCharacters();
 	
 	// Draw borders around the screen, as in the real game
 	int m = 10;
@@ -236,6 +244,23 @@ void GeometryWarsApp::draw()
 	gl::drawStrokedRect( Rectf( m, m, getWindowWidth() - m, getWindowHeight() - m ) );
 	m = 14;
 	gl::drawStrokedRect( Rectf( m, m, getWindowWidth() - m, getWindowHeight() - m ) );
+}
+
+void GeometryWarsApp::drawCharacters( ci::ColorA colorModifier )
+{
+	// Reset the matrices to draw characters as 3d shadpes
+	gl::setMatricesWindowPersp( app::getWindowSize(), 20.0f, -100.0f, 300.0f, false );
+	
+	std::vector<Character*>::iterator c_iter;
+	for( c_iter = mCharacters.begin(); c_iter != mCharacters.end(); c_iter++ ) {
+		gl::color( (*c_iter)->color + colorModifier );
+		glPushMatrix();
+		gl::translate( (*c_iter)->position );
+		gl::rotate( (*c_iter)->rotation );
+		gl::scale( (*c_iter)->scale );
+		gl::drawStrokedCube( Vec3f::zero(), Vec3f( 10, 10, 10 ) );
+		glPopMatrix();
+	}
 }
 
 CINDER_APP_BASIC( GeometryWarsApp, RendererGl )

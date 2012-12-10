@@ -26,15 +26,20 @@ public:
 private:
 	void applyBlur( ci::gl::Texture* texture, ci::gl::Fbo* intoFbo, float spread, float size, ci::Vec2f axis );
 	void showExplosion( ci::Vec2f position );
+	void drawCharacters( ci::ColorA colorModifier = ci::ColorA(0, 0, 0, 0 ) );
+	
 	float mPreviousTime;
 	
-	// Frame bufger objects
+	// Frame buffer objects
 	ci::gl::Fbo* mGridFbo;
 	ci::gl::Fbo* mColorMaskFbo;
 	ci::gl::Fbo* mColorMaskFbo1;
 	ci::gl::Fbo* mColorMaskFbo2;
 	ci::gl::Fbo* mDistortionMaskFbo;
 	ci::gl::Fbo* mDistortionMaskFbo2;
+	ci::gl::Fbo* mCharacterGlowFbo;
+	ci::gl::Fbo* mCharacterGlowFbo1;
+	ci::gl::Fbo* mCharacterGlowFbo2;
 	
 	// Shaders
 	ci::gl::GlslProg* mGridShader;
