@@ -22,7 +22,7 @@ void GeometryWarsApp::setup()
 	
 	gl::Fbo::Format format;
 	format.enableMipmapping();
-	format.setMagFilter( GL_NEAREST_MIPMAP_LINEAR );
+	format.setMagFilter( GL_LINEAR_MIPMAP_LINEAR );
 	mGridFbo				= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mColorMaskFbo			= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
 	mColorMaskFbo1			= new gl::Fbo( getWindowWidth(), getWindowHeight(), format );
@@ -130,8 +130,8 @@ void GeometryWarsApp::update()
 void GeometryWarsApp::applyBlur( ci::gl::Texture* texture, ci::gl::Fbo* intoFbo, float spread, float size, ci::Vec2f axis )
 {
 	intoFbo->bindFramebuffer();
-	mBlurShader->bind();
 	gl::clear( ColorA( 0, 0, 0, 0 ) );
+	mBlurShader->bind();
 	texture->bind( 0 );
 	mBlurShader->uniform( "texture", 0 );
 	mBlurShader->uniform( "spread", spread );
@@ -157,7 +157,7 @@ void GeometryWarsApp::draw()
 	// Draw the grid into a FBO
 	Vec2i wSize = getWindowSize();
 	mGridFbo->bindFramebuffer();
-	gl::clear( Color( 0, 0, 0 ) );
+	gl::clear( ColorA( 0, 0, 0, 0 ) );
 	for( int i = 0; i < mGridSize.x; i++) {
 		float alpha = i % 2 ? 0.5f : 1.0f; // make every other line half opacity
 		Vec2f start = Vec2f( 0.0f, (float)i * mGridUnitSize.x );
@@ -214,7 +214,7 @@ void GeometryWarsApp::draw()
 	mGridShader->uniform( "distortionMaskTexture",	2 );
 	mGridShader->uniform( "vanishingPoint",			Vec2f( 0.5, 0.5 ) );
 	mGridShader->uniform( "focalLength",			10.0f );
-	mGridShader->uniform( "depthMultiplier",		1.2f );
+	mGridShader->uniform( "depthMultiplier",		2.2f );
 	gl::drawSolidRect( Rectf( getWindowBounds() ) );
 	mGridFbo->unbindTexture();
 	mColorMaskFbo2->unbindTexture();
